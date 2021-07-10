@@ -242,6 +242,7 @@ function formaCabeca(forma) {
 		cabeca.appendChild(use)
 	};
 };
+
 function formaCorpo(forma) {
 	corpo.innerHTML = '';
 	for (var i = 0; i < personagens[forma].corpo.length; i++) {
@@ -255,10 +256,12 @@ cabecaBase.addEventListener("click", randomCabeca);
 corpoBase.addEventListener("click", randomCorpo);
 cabeca.addEventListener("click", randomCabeca);
 corpo.addEventListener("click", randomCorpo);
+
 function randomCabeca() {
 	var math = Math.floor(Math.random() * personagens.length);
 	formaCabeca(math);
 };
+
 function randomCorpo() {
 	var math = Math.floor(Math.random() * personagens.length);
 	formaCorpo(math);
