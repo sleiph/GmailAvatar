@@ -7,7 +7,16 @@ namespace GmailAvatar.Entidades
 {
     public class Forma
     {
-        public Guid Id { get; set; }
-        public string Svg { get; set; }
+        public int Id { get; set; }
+        public string Caminho { get; set; }
+
+        Forma() { }
+
+        public Forma(int id, string caminho)
+        {
+            this.Id = id;
+            this.Caminho = caminho + ".svg";
+        }
+
     }
 }
