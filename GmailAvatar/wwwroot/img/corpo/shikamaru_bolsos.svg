@@ -1,0 +1,18 @@
+<svg xmlns='http://www.w3.org/2000/svg'>
+  <g id="bolsosShika" class="crp">
+    <rect x="210" y="363" width="11" height="22" />
+    <rect x="225" y="363" width="11" height="22" />
+    <rect x="240" y="363" width="11" height="22" />
+    <rect x="237" y="363" width="2" height="22" />
+    <rect x="222" y="363" width="2" height="22" />
+    <path d="M254,385h-2V362.92a2,2,0,0,1,2,2.06Z" />
+    <path d="M209,385h-2V364.85a1.94,1.94,0,0,1,2-1.94Z" />
+    <rect x="133" y="363" width="11" height="22" />
+    <rect x="148" y="363" width="11" height="22" />
+    <rect x="163" y="363" width="11" height="22" />
+    <rect x="160" y="363" width="2" height="22" />
+    <rect x="145" y="363" width="2" height="22" />
+    <path d="M177,385h-2V362.92a2,2,0,0,1,2,2.06Z" />
+    <path d="M132,385h-2V364.85a1.94,1.94,0,0,1,2-1.94Z" />
+  </g>
+</svg>

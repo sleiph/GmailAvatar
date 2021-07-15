@@ -1,0 +1,16 @@
+<svg xmlns='http://www.w3.org/2000/svg'>
+  <g>
+    <rect class="crpEsc" x="167" y="327" width="48" height="50" />
+    <rect class="cmplEsc" x="194" y="344" width="9" height="6" />
+    <rect class="cmpl" x="194" y="335" width="9" height="6" />
+    <rect class="crp" x="178" y="347" width="11" height="5" />
+    <rect class="crp" x="178" y="340" width="11" height="5" />
+    <rect class="crp" x="178" y="333" width="11" height="5" />
+    <rect class="crp" x="172" y="333" width="4" height="37" />
+    <rect class="crp" x="206" y="333" width="4" height="37" />
+    <rect class="crp" x="178" y="354" width="5" height="16" />
+    <rect class="crp" x="185" y="354" width="5" height="16" />
+    <rect class="crp" x="192" y="354" width="5" height="16" />
+    <rect class="crp" x="199" y="354" width="5" height="16" />
+  </g>
+</svg>
