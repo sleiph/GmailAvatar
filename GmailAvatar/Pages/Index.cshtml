@@ -6,73 +6,72 @@
 @{
     ViewData["Title"] = "Gmail Avatar";
 
-    Forma macacao = new Forma(0, "mario_macacao");
-    Forma orelhas = new Forma(1, "mickey_orelhas");
+    Avatar[] personagens =
+    {
+        new Avatar("blank", "", new string[0], new string[0]),
+        new Avatar("Mario", "Mario", new string[] {"bigodeMarioNietzsche", "chapeuMario"}, new string[] { "macacaoMario" }),
+        new Avatar("pikachu", "", new string[] {"pokeRosto", "pokeOrelhas"}, new string[] { "pokeCauda" }),
+        new Avatar("Mickey", "Mouse", new string[] {"orelhasMickey"}, new string[] { "shortsMickey" }),
+        new Avatar("Finn", "Mertens", new string[] {"capuzFinn"}, new string[] { "mochilaFinn" }),
+        new Avatar("Bart", "Simpson", new string[] {"cabeloBart", "narizBart"}, new string[0]),
+        new Avatar("Homer", "Simpson", new string[] {"cabeloHomer", "barbaHomer"}, new string[] { "golaHomer" }),
+        new Avatar("batman", "", new string[] { "mascaraBatman" }, new string[] { "morcegoBatman", "capaBatman" }),
+        new Avatar("coringa", "", new string[] { "cabeloCoringa" }, new string[] { "camisaCoringa", "sobretudoCoringaLedger" }),
+        new Avatar("Heath", "Ledger", new string[] { "cabeloLedger" }, new string[] { "vesteLedger", "sobretudoCoringaLedger" }),
+        new Avatar("Clark", "Kent", new string[] { "cabeloSuperClark", "oculosEmicidaChomskyClark" }, new string[] { "camisaEmicidaChomskyClark" }),
+        new Avatar("superman", "", new string[] { "cabeloSuperClark" }, new string[] { "capaSuper", "esperancaSuper" }),
+        new Avatar("Shikamaru", "Nara", new string[] { "cabeloShika" }, new string[] { "coleteShika", "bolsosShika", "ombreirasShika", "pescoceiraShika", "bandanaShika" }),
+        new Avatar("conde", "Dracula", new string[] { "bocaDracula", "cabeloVitoCoringaDracula" }, new string[] { "capaDracula", "ternoDracula", "fraqueVitoDracula", "bolsoDracula", "gravataDracula" }),
+        new Avatar("ninja", "", new string[] { "mascaraNinja" }, new string[] { "espadaNinja", "vestesNinja" }),
+        new Avatar("Vito", "Corleone", new string[] { "bigodeFreddieVito", "cabeloVitoCoringaDracula" }, new string[] { "fraqueVitoDracula", "gravataVito", "rosaVito" }),
+        new Avatar("John", "Rambo", new string[] { "faixaRambo" }, new string[] { "medalhaoRambo" }),
+        new Avatar("Darth", "Vader", new string[] { "mascaraVader" }, new string[] { "painelVader", "capaVader" }),
+        new Avatar("Chaves", "", new string[] { "gorroChaves" }, new string[] { "camisaChaves", "suspensoriosChaves" }),
+        new Avatar("Charlie", "Chaplin", new string[] { "bigodeChaplin", "chapeuMagritteChaplin" }, new string[] { "casacoChaplin" }),
+        new Avatar("Kim", "Jong-un", new string[] { "cabeloKim" }, new string[] { "uniformeKim", "botao1", "botao2", "botao3", "botao4", "brocheKim" }),
+        new Avatar("Friedrich", "Nietzsche", new string[] { "bigodeMarioNietzsche", "cabeloNietzsche" }, new string[] { "fraqueNietzsche" }),
+        new Avatar("Noam", "Chomsky", new string[] { "oculosEmicidaChomskyClark", "cabeloChomsky", "chapeuChomsky" }, new string[] { "camisaEmicidaChomskyClark" }),
+        new Avatar("Virginia", "Woolf", new string[] { "cabeloVirginia" }, new string[] { "perolasVirginia", "ternoVirginia" }),
+        new Avatar("René", "Magritte", new string[] { "chapeuMagritteChaplin", "macaMagritte" }, new string[] { "camisaMagritte", "gravataMagritte", "casacoMagritte" }),
+        new Avatar("Salvador", "Dalí", new string[] { "bigodeDali" }, new string[] { "camisaDali", "gravataDali", "riscaDali" }),
+        new Avatar("Emicida", "", new string[] { "oculosEmicidaChomskyClark", "cabeloEmicida" }, new string[] { "camisaEmicidaChomskyClark", "suspensoriosEmicida" }),
+        new Avatar("Freddie", "Mercury", new string[] { "bigodeFreddieVito" }, new string[] { "pelosFreddie", "camisaFreddie" })
+    };
+
+    Cor[] cores = {
+        new Cor("azul", "var(--azulClr)", "var(--azul)", "var(--azulEsc)", "var(--vermelho)", "var(--vermelhoEsc)"),
+        new Cor("verde", "var(--verdeClr)", "var(--verde)", "var(--verdeEsc)", "var(--vermelho)", "var(--vermelhoEsc)"),
+        new Cor("amarelo", "var(--amareloClr)", "var(--amarelo)", "var(--laranja)", "var(--roxo)", "var(--roxoEsc)"),
+        new Cor("vermelho", "var(--vermelhoClr)", "var(--vermelho)", "var(--vermelhoEsc)", "var(--azul)", "var(--azulEsc)"),
+        new Cor("roxo", "var(--roxoClr)", "var(--roxo)", "var(--roxoEsc)", "var(--verde)", "var(--verdeEsc)"),
+        new Cor("cinza", "white", "var(--cinzaClr)", "var(--cinza)", "black", "var(--cinza)"),
+    };
+
 }
 
 <main>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384">
-        <defs>
-
-            <g id="painelVader">
-                <rect class="crpEsc" x="167" y="327" width="48" height="50" />
-                <rect class="cmplEsc" x="194" y="344" width="9" height="6" />
-                <rect class="cmpl" x="194" y="335" width="9" height="6" />
-                <rect class="crp" x="178" y="347" width="11" height="5" />
-                <rect class="crp" x="178" y="340" width="11" height="5" />
-                <rect class="crp" x="178" y="333" width="11" height="5" />
-                <rect class="crp" x="172" y="333" width="4" height="37" />
-                <rect class="crp" x="206" y="333" width="4" height="37" />
-                <rect class="crp" x="178" y="354" width="5" height="16" />
-                <rect class="crp" x="185" y="354" width="5" height="16" />
-                <rect class="crp" x="192" y="354" width="5" height="16" />
-                <rect class="crp" x="199" y="354" width="5" height="16" />
-            </g>
-            <g id="capaVader" class="crpEsc">
-                <path d="M279,259v42h33A53.18,53.18,0,0,0,279,259Z" />
-                <path d="M252,248.58v57.18c4.33-2.66,8.23-4.78,11.06-5.18V252.3Q257.71,250.35,252,248.58Z" />
-                <path d="M131,248.67q-5.52,1.67-11,3.68V300.5c3.12,0,11,5.19,11,5.19Z" />
-                <path d="M100.74,261a51.58,51.58,0,0,0-28.45,40H104V259.49C102.91,260,101.82,260.51,100.74,261Z" />
-                <path d="M183,319V240.2a206.79,206.79,0,0,0-36,4.54v71.17s5,3.09,10,3.09Z" />
-                <path d="M236,315.87V244.58a206,206,0,0,0-37-4.46V319h26.92C230.38,319,236,315.87,236,315.87Z" />
-            </g>
-            <g id="mascaraVader">
-                <path class="cbc" d="M285 205l-21-69c-3.7-36.2-35.2-64.2-72.4-64.2S122.7 99.8 119 136L98 205c-2.7 8.4 0 12 5.2 12H279.6C285.6 217 287.6 212 285 205Z" />
-                <path class="cbcEsc" d="M267.6 201.7s-15.9-65.3-43.9-65.3c-17.8 0-19.8 8.2-31.8 8.6-12.5-0.4-14.2-8.6-32-8.6-28 0-32.6 30-39.5 52.1S108.6 217 103.2 217H279.6S272.9 216 267.6 201.7ZM167 209l17-25h16l16 25Z" />
-            </g>
-            <path id="cabeloVitoCoringaDracula" class="cbcEsc" d="M191.5 72A72.5 72.5 0 0 0 122 165h0c7 0 16.1-24.9 15.3-38.2C135.7 99.3 154 86.9 173.6 94.1c6.8 2.5 9.7 4.3 17.8 4.3 8.5 0 11.3-1.8 18-4.3 19.6-7.2 38 5.3 36.4 32.8C244.9 140.1 254 165 261 165h0A72.5 72.5 0 0 0 191.5 72Z" />
-
-        </defs>
-        <g id="base">
-            <circle id="cabecaBase" class="cbc" cx="191.5" cy="144.5" r="72.5" />
-            <path id="corpoBase" class="crp" d="M101 261a52.8 52.8 0 0 0-29 47v89H312V308a51.8 51.8 0 0 0-29-47 201.8 201.8 0 0 0-91-21C159.4 240 129.2 246.9 101 261Z" />
-        </g>
-        <g id="corpo"></g>
-        <g id="cabeca"></g>
-    </svg>
+    <component type="typeof(Components.Boneco)" render-mode="Static" />
 
     <article>
         <h1>Customizar</h1>
+
         <div class="formas" id="formas">
-            <div class="forma">
-                <button class="btnCabeca" onClick="randomCabeca()">aleatório</button>
-                <button class="btnCorpo" onClick="randomCorpo()"></button>
-            </div>
+            @foreach (Avatar personagem in personagens)
+            {
+                <component type="typeof(Components.BotaoForma)" render-mode="Static" param-nome="@personagem.Nome" param-sobrenome="@personagem.SobreNome" />
+            }
         </div>
-        <div class="formas" id="cores"></div>
+
+        <div class="formas" id="cores">
+            @foreach (Cor cor in cores)
+            {
+                <component type="typeof(Components.BotaoCor)" render-mode="Static" param-cor="@cor" />
+            }
+        </div>
         <div class="reset">
             <button onClick="esvaziarTudo()">reset</button>
             <button onClick="teste()">testes</button>
         </div>
     </article>
-
-    <object type="image/svg+xml" id="orelhasMickey"
-            data="@Url.Content( String.Format("~/img/{0}/{1}", "cabeca", orelhas.Caminho) )">
-    </object>
-    <object type="image/svg+xml"
-            data="@Url.Content( String.Format("~/img/{0}/{1}", "corpo", macacao.Caminho) )">
-    </object>
-
-    @Html.Raw( String.Format("~/img/{0}", "teste.xml") )
 
 </main>

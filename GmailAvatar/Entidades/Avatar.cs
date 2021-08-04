@@ -10,7 +10,15 @@ namespace GmailAvatar.Entidades
         public Guid Id { get; set; }
         public string Nome { get; set; }
         public string SobreNome { get; set; }
-        public Forma[] Cabeca { get; set; }
-        public Forma[] Corpo { get; set; }
+        public string[] Cabeca { get; set; }
+        public string[] Corpo { get; set; }
+
+        public Avatar(string nome, string sobre, string[] cabeca, string[] corpo)
+        {
+            this.Nome = nome;
+            this.SobreNome = sobre;
+            this.Cabeca = cabeca;
+            this.Corpo = corpo;
+        }
     }
 }

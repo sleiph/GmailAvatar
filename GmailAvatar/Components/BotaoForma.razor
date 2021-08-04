@@ -1,0 +1,52 @@
+﻿<div class="forma">
+    <button class="btnCabeca" @onClick="FormaCabeca">@nome</button>
+    <button class="btnCorpo" onClick="formaCorpo">@sobrenome</button>
+</div>
+
+@code {
+    private int aleatorio = 0;
+
+    [Parameter] public string nome { get; set; }
+    [Parameter] public string sobrenome { get; set; }
+
+    void FormaCabeca()
+    {
+        /*cabeca.innerHTML = '';
+        for (var i = 0; i < personagens[forma].cabeca.length; i++)
+        {
+            var use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+            use.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#' + personagens[forma].cabeca[i]);
+            cabeca.appendChild(use)
+        };*/
+
+        Console.WriteLine("cabeca");
+    }
+
+    void FormaCorpo()
+    {
+        /*
+        corpo.innerHTML = '';
+        for (var i = 0; i < personagens[forma].corpo.length; i++)
+        {
+            var use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+            use.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#' + personagens[forma].corpo[i]);
+            corpo.appendChild(use)
+        */
+
+        System.Diagnostics.Debug.WriteLine("corpo");
+    }
+
+    void RandomCabeca()
+    {
+        Random rnd = new Random();
+        aleatorio = rnd.Next(1, 10);
+        FormaCabeca();
+    }
+
+    void randomCorpo()
+    {
+        Random rnd = new Random();
+        aleatorio = rnd.Next(1, 10);
+        FormaCorpo();
+    }
+}

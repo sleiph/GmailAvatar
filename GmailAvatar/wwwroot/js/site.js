@@ -289,25 +289,6 @@ function esvaziarTudo() {
 	corCorpo(0);
 };
 
-function botoesFormas() {
-	for (var i = 0; i < personagens.length; i++) {
-		var btnForma = document.createElement('div');
-		btnForma.innerHTML = '<button class="btnCabeca" onClick="formaCabeca(' + i + ')">' + personagens[i].nome + '</button><button class="btnCorpo" onClick="formaCorpo(' + i + ')">' + personagens[i].sobrenome + '</button>';
-		btnForma.setAttribute('class', 'forma');
-		nestFormas.insertBefore(btnForma, nestFormas.firstChild);
-	};
-};
-function botoesCores() {
-	for (var i = 0; i < cores.length; i++) {
-		var btnCor = document.createElement('div');
-		btnCor.innerHTML = '<button class="btnCabeca" style="background-color: ' + cores[i].nrm + ';" onClick="corCabeca(' + i + ')">' + cores[i].nome + '</button><button class="btnCorpo" style="background-color: ' + cores[i].nrm + ';" onClick="corCorpo(' + i + ')"></button>';
-		btnCor.setAttribute('class', 'forma');
-		nestCores.appendChild(btnCor);
-	};
-};
-botoesFormas();
-botoesCores();
-
 function teste() {
 	console.log(personagens.length);
 };
