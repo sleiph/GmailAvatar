@@ -234,21 +234,20 @@ var cores = [
 	}
 ];
 
-function formaCabeca(forma) {
+function formaCabeca(bliu) {
 	cabeca.innerHTML = '';
-	for (var i = 0; i < personagens[forma].cabeca.length; i++) {
+	console.log( bliu[0] )
+	for (var i = 0; i < bliu.length; i++) {
 		var use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
-		use.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#' + personagens[forma].cabeca[i]);
+		use.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#' + bliu[i].id);
 		cabeca.appendChild(use)
 	};
 };
 
-function formaCorpo(forma) {
+function formaCorpo(bliu) {
 	corpo.innerHTML = '';
-	for (var i = 0; i < personagens[forma].corpo.length; i++) {
-		var use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
-		use.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#' + personagens[forma].corpo[i]);
-		corpo.appendChild(use)
+	for (var i = 0; i < bliu.length; i++) {
+		corpo.appendChild(bliu[i])
 	};
 };
 

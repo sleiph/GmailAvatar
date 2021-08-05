@@ -1,13 +1,13 @@
-﻿<div class="forma">
-    <button class="btnCabeca" @onClick="FormaCabeca">@nome</button>
-    <button class="btnCorpo" onClick="formaCorpo">@sobrenome</button>
+﻿@using GmailAvatar.Entidades;
+@using System.Text;
+
+<div class="forma">
+    <button class="btnCabeca" onClick="formaCabeca([ @(personagem.Cabeca[0]) ])">@personagem.Nome</button>
+    <button class="btnCorpo" onClick="formaCorpo(@personagem.Corpo[0])">@personagem.SobreNome</button>
 </div>
 
 @code {
-    private int aleatorio = 0;
-
-    [Parameter] public string nome { get; set; }
-    [Parameter] public string sobrenome { get; set; }
+    [Parameter] public Avatar personagem { get; set; }
 
     void FormaCabeca()
     {
@@ -38,15 +38,12 @@
 
     void RandomCabeca()
     {
-        Random rnd = new Random();
-        aleatorio = rnd.Next(1, 10);
-        FormaCabeca();
+
     }
 
     void randomCorpo()
     {
-        Random rnd = new Random();
-        aleatorio = rnd.Next(1, 10);
-        FormaCorpo();
+
     }
+
 }
