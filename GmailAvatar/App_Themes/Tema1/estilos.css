@@ -1,0 +1,44 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.cbcClr {
+    fill: #a0c2ff;
+}
+
+.cbc {
+    fill: #4474e0;
+}
+
+.cbcEsc {
+    fill: #2154c8;
+}
+
+.cbcCmpl {
+    fill: #eb0500;
+}
+
+.cbcCmplEsc {
+    fill: #990500;
+}
+
+.crpClr {
+    fill: #a0c2ff;
+}
+
+.crp {
+    fill: #4474e0;
+}
+
+.crpEsc {
+    fill: #2154c8;
+}
+
+.cmpl {
+    fill: #eb0500;
+}
+
+.cmplEsc {
+    fill: #990500;
+}

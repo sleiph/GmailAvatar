@@ -1,0 +1,39 @@
+﻿@model PersonagensModel
+@using GmailAvatar.Models
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <link href="~/App_Themes/Tema1/estilos.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <h1>@Html.Label("Colé {0} {1}", Model.Ativo.Nome, Model.Ativo.Sobrenome)</h1>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384" style="height: 384px">
+            @Html.Partial("_Blank")
+
+            @Html.Partial(Model.Ativo.Nome + Model.Ativo.Sobrenome)
+        </svg>
+
+       @using (Html.BeginForm("HandleButtonClick", "Personagem"))
+        {
+            for (int i = 0; i < Model.Tamanho; i++)
+            {
+                <button type="submit" name="pers" value=@i>
+                    @Model.Personagens[i].Nome @Model.Personagens[i].Sobrenome
+                </button>
+            }
+        }
+
+    </div>
+</body>
+</html>

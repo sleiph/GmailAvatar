@@ -10,6 +10,10 @@ namespace GmailAvatar.Models
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
 
-
+        public PersonagemModel(string nome, string sobrenome)
+        {
+            Nome = nome;
+            Sobrenome = sobrenome;
+        }
     }
 }

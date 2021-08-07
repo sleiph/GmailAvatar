@@ -88,6 +88,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\Tema1\estilos.css" />
     <Content Include="Global.asax" />
     <Content Include="Imagens\mickey_orelhas.svg" />
     <Content Include="Imagens\mickey_shorts.svg" />
@@ -96,17 +97,47 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ButtonController.cs" />
+    <Compile Include="Controllers\PersonagemController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\ButtonModel.cs" />
     <Compile Include="Models\PersonagemModel.cs" />
+    <Compile Include="Models\PersonagensModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
-    <Content Include="Views\Button\Index.cshtml" />
+    <Content Include="Views\Personagem\Index.cshtml" />
+    <Content Include="Views\Shared\DarthVader.cshtml" />
+    <Content Include="Views\Shared\_Blank.cshtml" />
+    <Content Include="Views\Shared\MarioMario.cshtml" />
+    <Content Include="Views\Shared\Pikachu.cshtml" />
+    <Content Include="Views\Shared\MickeyMouse.cshtml" />
+    <Content Include="Views\Shared\FinnMertens.cshtml" />
+    <Content Include="Views\Shared\BartSimpson.cshtml" />
+    <Content Include="Views\Shared\HomerSimpson.cshtml" />
+    <Content Include="Views\Shared\Batman.cshtml" />
+    <Content Include="Views\Shared\Coringa.cshtml" />
+    <Content Include="Views\Shared\HeathLedger.cshtml" />
+    <Content Include="Views\Shared\ClarkKent.cshtml" />
+    <Content Include="Views\Shared\Superman.cshtml" />
+    <Content Include="Views\Shared\ShikamaruNara.cshtml" />
+    <Content Include="Views\Shared\VladDracula.cshtml" />
+    <Content Include="Views\Shared\Ninja.cshtml" />
+    <Content Include="Views\Shared\VitoCorleone.cshtml" />
+    <Content Include="Views\Shared\JohnRambo.cshtml" />
+    <Content Include="Views\Shared\Chaves.cshtml" />
+    <Content Include="Views\Shared\CharlieChaplin.cshtml" />
+    <Content Include="Views\Shared\KimJongun.cshtml" />
+    <Content Include="Views\Shared\FriedrichNietzsche.cshtml" />
+    <Content Include="Views\Shared\NoamChomsky.cshtml" />
+    <Content Include="Views\Shared\VirginiaWoolf.cshtml" />
+    <Content Include="Views\Shared\ReneMagritte.cshtml" />
+    <Content Include="Views\Shared\SalvadorDali.cshtml" />
+    <Content Include="Views\Shared\LeandroEmicida.cshtml" />
+    <Content Include="Views\Shared\FreddieMercury.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -116,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Button\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
