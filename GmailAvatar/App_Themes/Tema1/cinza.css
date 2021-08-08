@@ -1,0 +1,49 @@
+﻿body {
+    background-color: white;
+}
+
+button {
+    background-color: #b4b4b4;
+    color: white;
+    border: 0px solid #b4b4b4;
+}
+
+.cbcClr {
+    fill: white;
+}
+
+.cbc {
+    fill: #b4b4b4;
+}
+
+.cbcEsc {
+    fill: #525252;
+}
+
+.cbcCmpl {
+    fill: black;
+}
+
+.cbcCmplEsc {
+    fill: #525252;
+}
+
+.crpClr {
+    fill: white;
+}
+
+.crp {
+    fill: #b4b4b4;
+}
+
+.crpEsc {
+    fill: #525252;
+}
+
+.cmpl {
+    fill: black;
+}
+
+.cmplEsc {
+    fill: #525252;
+}

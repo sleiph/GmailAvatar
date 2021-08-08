@@ -10,6 +10,7 @@ namespace GmailAvatar.Models
         public List<PersonagemModel> Personagens { get; set; }
         public PersonagemModel Ativo { get; set; }
         public int Tamanho { get; set; }
+        public string Cor { get; set; }
 
         public PersonagensModel(int indice)
         {
@@ -46,11 +47,17 @@ namespace GmailAvatar.Models
 
             Ativo = Personagens[indice];
             Tamanho = Personagens.Count;
+            Cor = "azul";
         }
 
         public void SetAtivo(int indice)
         {
             Ativo = Personagens[indice];
+        }
+
+        public void SetCor(string cor)
+        {
+            Cor = cor;
         }
     }
 }

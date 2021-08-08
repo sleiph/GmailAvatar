@@ -1,0 +1,42 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;400;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Public Sans', sans-serif;
+}
+
+main {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.exibicao svg {
+    width: 100%;
+}
+
+.botoes-forma, .botoes-cor {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 8px 12px;
+    min-width: 160px;
+    margin: 4px;
+}
+
+@media screen and (max-width: 574px) {
+    button {
+        width: calc(50% - 12px);
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    button {
+        width: 100%;
+    }
+}

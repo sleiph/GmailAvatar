@@ -1,0 +1,49 @@
+﻿body {
+    background-color: #b7a6dd;
+}
+
+button {
+    background-color: #886cc6;
+    color: white;
+    border: 0px solid #886cc6;
+}
+
+.cbcClr {
+    fill: #b7a6dd;
+}
+
+.cbc {
+    fill: #886cc6;
+}
+
+.cbcEsc {
+    fill: #5f4b8b;
+}
+
+.cbcCmpl {
+    fill: #39b54a;
+}
+
+.cbcCmplEsc {
+    fill: #377355;
+}
+
+.crpClr {
+    fill: #b7a6dd;
+}
+
+.crp {
+    fill: #886cc6;
+}
+
+.crpEsc {
+    fill: #5f4b8b;
+}
+
+.cmpl {
+    fill: #39b54a;
+}
+
+.cmplEsc {
+    fill: #377355;
+}

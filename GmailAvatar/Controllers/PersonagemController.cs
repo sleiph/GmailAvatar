@@ -17,10 +17,16 @@ namespace GmailAvatar.Controllers
             return View("Index", personagens);
         }
 
-        public ActionResult HandleButtonClick(string pers)
+        public ActionResult HandleFormaClick(string pers)
         {
             int indice = Int32.Parse(pers);
             personagens.SetAtivo(indice);
+            return View("Index", personagens);
+        }
+
+        public ActionResult HandleCorClick(string cor)
+        {
+            personagens.SetCor(cor);
             return View("Index", personagens);
         }
     }

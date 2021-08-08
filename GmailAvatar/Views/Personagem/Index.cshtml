@@ -3,6 +3,7 @@
 
 @{
     Layout = null;
+    string[] cores = new string[] { "azul", "verde", "amarelo", "vermelho", "roxo", "cinza" };
 }
 
 <!DOCTYPE html>
@@ -12,28 +13,49 @@
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
 
-    <link href="~/App_Themes/Tema1/estilos.css" rel="stylesheet" />
+    <link href="~/App_Themes/Tema1/_estilos.css" rel="stylesheet" />
+    <link href="@Url.Content("~/App_Themes/Tema1/" + Model.Cor + ".css")" rel = "stylesheet" />
 </head>
 <body>
-    <div>
-        <h1>@Html.Label("Colé {0} {1}", Model.Ativo.Nome, Model.Ativo.Sobrenome)</h1>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384" style="height: 384px">
-            @Html.Partial("_Blank")
+    <main>
 
-            @Html.Partial(Model.Ativo.Nome + Model.Ativo.Sobrenome)
-        </svg>
+        <h1>@Model.Ativo.Nome @Model.Ativo.Sobrenome</h1>
+        <h2>@Model.Cor</h2>
 
-       @using (Html.BeginForm("HandleButtonClick", "Personagem"))
-        {
-            for (int i = 0; i < Model.Tamanho; i++)
-            {
-                <button type="submit" name="pers" value=@i>
-                    @Model.Personagens[i].Nome @Model.Personagens[i].Sobrenome
-                </button>
-            }
-        }
+        <div class="exibicao">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384" style="height: 384px">
+                @Html.Partial("_Blank")
 
-    </div>
+                @Html.Partial(Model.Ativo.Nome + Model.Ativo.Sobrenome)
+            </svg>
+        </div>
+
+        <div class="controles">
+            <div class="botoes-forma">
+                @using (Html.BeginForm("HandleFormaClick", "Personagem"))
+                {
+                    for (int i = 0; i < Model.Tamanho; i++)
+                    {
+                        <button type="submit" name="pers" value=@i>
+                            @Model.Personagens[i].Nome @Model.Personagens[i].Sobrenome
+                        </button>
+                    }
+                }
+            </div>
+
+            <div class="botoes-cor">
+                @using (Html.BeginForm("HandleCorClick", "Personagem"))
+                {
+                    foreach (string cor in cores)
+                    {
+                        <button type="submit" name="cor" value=@cor>
+                            @cor
+                        </button>
+                    }
+                }
+            </div>
+        </div>
+
+    </main>
 </body>
 </html>

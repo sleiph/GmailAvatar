@@ -88,20 +88,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Themes\Tema1\estilos.css" />
+    <Content Include="App_Themes\Tema1\azul.css" />
+    <Content Include="App_Themes\Tema1\amarelo.css" />
+    <Content Include="App_Themes\Tema1\roxo.css" />
+    <Content Include="App_Themes\Tema1\cinza.css" />
+    <Content Include="App_Themes\Tema1\vermelho.css" />
+    <Content Include="App_Themes\Tema1\verde.css" />
+    <Content Include="App_Themes\Tema1\_estilos.css" />
     <Content Include="Global.asax" />
+    <Content Include="Imagens\blank.svg" />
     <Content Include="Imagens\mickey_orelhas.svg" />
     <Content Include="Imagens\mickey_shorts.svg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\ButtonController.cs" />
     <Compile Include="Controllers\PersonagemController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ButtonModel.cs" />
     <Compile Include="Models\PersonagemModel.cs" />
     <Compile Include="Models\PersonagensModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -147,7 +152,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Button\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

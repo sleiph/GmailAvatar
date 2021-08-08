@@ -1,8 +1,13 @@
 ﻿body {
-    margin: 0;
-    padding: 0;
-    border: 0;
+    background-color: #a0c2ff;
 }
+
+button {
+    background-color: #4474e0;
+    color: white;
+    border: 0px solid #4474e0;
+}
+
 .cbcClr {
     fill: #a0c2ff;
 }
