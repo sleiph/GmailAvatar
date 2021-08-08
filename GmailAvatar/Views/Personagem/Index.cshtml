@@ -23,12 +23,17 @@
         <h2>@Model.Cor</h2>
 
         <div class="exibicao">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384" style="height: 384px">
-                @Html.Partial("_Blank")
+            @using (Html.BeginForm("HandleFormaRandom", "Personagem"))
+            {
+                <button class="svg" type="submit" name="rnd" value=0>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384" style="height: 384px">
+                        @Html.Partial("_Blank")
 
-                @Html.Partial(Model.Ativo.Nome + Model.Ativo.Sobrenome)
-            </svg>
-        </div>
+                        @Html.Partial(Model.Ativo.Nome + Model.Ativo.Sobrenome)
+                    </svg>
+                </button>
+            }
+            </div>
 
         <div class="controles">
             <div class="botoes-forma">

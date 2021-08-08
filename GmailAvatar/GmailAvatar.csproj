@@ -96,9 +96,8 @@
     <Content Include="App_Themes\Tema1\verde.css" />
     <Content Include="App_Themes\Tema1\_estilos.css" />
     <Content Include="Global.asax" />
-    <Content Include="Imagens\blank.svg" />
-    <Content Include="Imagens\mickey_orelhas.svg" />
-    <Content Include="Imagens\mickey_shorts.svg" />
+    <Content Include="App_Data\blank.svg" />
+    <Content Include="App_Data\mario.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -150,9 +149,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

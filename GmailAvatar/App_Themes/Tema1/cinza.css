@@ -2,7 +2,7 @@
     background-color: white;
 }
 
-button {
+.botoes-forma button, .botoes-cor button {
     background-color: #b4b4b4;
     color: white;
     border: 0px solid #b4b4b4;

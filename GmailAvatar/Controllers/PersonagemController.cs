@@ -24,6 +24,14 @@ namespace GmailAvatar.Controllers
             return View("Index", personagens);
         }
 
+        public ActionResult HandleFormaRandom( )
+        {
+            Random rnd = new Random();
+            int indice = rnd.Next(personagens.Tamanho);
+            personagens.SetAtivo(indice);
+            return View("Index", personagens);
+        }
+
         public ActionResult HandleCorClick(string cor)
         {
             personagens.SetCor(cor);

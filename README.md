@@ -1,7 +1,16 @@
 # Avatares Gmail
 
-Projeto feito em ASP.NET MVC.
+Projeto feito em ASP.NET MVC, com componentes Razor, Blazor e sei lá mais o que.
 
-Assim que eu conseguir entender esse negócio ele vai ser um editor de avatares usando Razor, Blazor e sei lá mais o que.
+Um editor de avatares que eu criei alguns anos atrás com javaScript e agora refiz em C#, sem nenhum javaScript e quase nenhum CSS, pra tentar entender o ASP.NET e estudar arquitetura MVC.
 
-![avatar](/GmailAvatar/Imagens/blank.svg)
+O projeto original pode ser encontrado [aqui](https://codepen.io/ricardoalvesgomes/pen/WdVPGz).
+
+![avatar](/GmailAvatar/App_Data/mario.jpg)
+
+## Fazer
+
+- melhorar o roteamento de endereços
+- usar AJAX pra recarregar só os elementos que forem alterados, não a página toda
+- criar os objetos com json
+- grid CSS
