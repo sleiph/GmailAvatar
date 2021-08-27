@@ -11,6 +11,7 @@ O projeto original pode ser encontrado [aqui](https://codepen.io/ricardoalvesgom
 ## Fazer
 
 - melhorar o roteamento de endereços
-- usar AJAX pra recarregar só os elementos que forem alterados, não a página toda
+- usar AJAX pra recarregar só os elementos que forem alterados na página
 - criar os objetos com json
 - grid CSS
+- achar um jeito de deployar essa monstruosidade
